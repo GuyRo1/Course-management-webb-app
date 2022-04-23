@@ -1,0 +1,36 @@
+@use "../../base/base" as vars;
+
+
+
+.course__sub-menu__buttons{
+    display:flex;
+    width:100%;
+   justify-content: space-around;
+}
+
+.course-data{
+    margin-top:100px;
+}
+
+.delete-course-svg-container {
+    margin-top:50px;
+    height: 80px;
+    width: 80px;
+    svg {
+        height:100%;
+        width:100%;
+        color: vars.$myBlue;
+        cursor:pointer;
+    }
+}
+
+.label{
+    background:vars.$myBlue;
+    color:white;
+}
+
+.value{
+    background:white;
+    color:vars.$myBlue;
+}
+

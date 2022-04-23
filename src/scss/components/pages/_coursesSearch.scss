@@ -1,0 +1,23 @@
+@use "../../base/base" as vars;
+
+.search-page{
+
+    .search-term{
+
+    }
+
+    li{
+        color : vars.$myTransparentBlue;
+        font-weight: bold;
+        text-decoration: none;
+        list-style-type: none;
+        cursor:pointer;
+        width:100%;
+        padding-left:20px;
+
+        &:hover{
+            background-color:vars.$myTransparentBlue;
+            color:white;
+        }
+    }
+}

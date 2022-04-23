@@ -1,0 +1,60 @@
+@use "../../base/base" as vars;
+
+.manage-students-page {
+    position:relative;
+    width: 100%;
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:5rem;
+
+    .search {
+        width: 200px;
+    }
+}
+
+.manage-students-page__form {
+    width: 40%;
+    border: 2px solid vars.$myBlue;
+    border-radius: 5px;
+    margin: 2rem;
+    padding: 1rem;
+
+    &.mobile {
+        margin-top: 2rem;
+        height: 80%;
+        width: 80%;
+        border: none;
+    }
+}
+
+.search-svg-container {
+    position:absolute;
+    right:50px;
+    top:15px;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+
+    svg {
+        height: 100%;
+        width: 100%;
+        color: vars.$myBlue;
+    }
+}
+
+.add-student-svg-container {
+    position:absolute;
+    right:50px;
+    top:15px;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+
+    svg {
+        height: 100%;
+        width: 100%;
+        color: vars.$myBlue;
+    }
+}

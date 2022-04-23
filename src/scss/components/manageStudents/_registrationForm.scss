@@ -1,0 +1,58 @@
+@use "../../base/base" as vars;
+
+.add-student__form {
+    width: 40%;
+    border: 2px solid vars.$myBlue;
+    border-radius: 5px;
+    padding: 1rem;
+
+    .mobile > & {
+        height: 80%;
+        width: 80%;
+        border: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding: 0 0.5rem;
+        border: 1px solid vars.$myBlue;
+        margin-top: 1rem;
+
+      
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .input-invalid {
+        border: 1px solid vars.$myRed;
+    }
+
+    button {
+        margin-top: 0.5rem;
+        display: block;
+        padding: 0.5rem;
+        background-color: vars.$myBlue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: #cccc;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.invalid-message {
+    color: vars.$myRed;
+    font-size: 0.75rem;
+}

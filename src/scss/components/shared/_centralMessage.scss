@@ -1,0 +1,18 @@
+@use "../../base/base" as vars;
+
+.central-message-page-layout {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.mobile{
+    }
+
+    div {
+        color: vars.$myBlue;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}

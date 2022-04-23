@@ -1,0 +1,34 @@
+@use "../../base/base" as vars;
+
+.header {
+    margin:0;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: vars.$myBlue;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    &.mobile {
+        position: relative;
+        
+    }
+
+    .logo-container{
+        height:3rem;
+        width:3rem;
+        cursor:pointer;
+
+        svg{
+            color:vars.$myWhite;
+            height:100%;
+            width:100%;
+        }
+    }
+}

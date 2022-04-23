@@ -1,0 +1,18 @@
+@use "../../base/base" as vars;
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.mobile{
+        margin-top: 0;
+    }
+
+    div {
+        color: vars.$myBlue;
+        font-size: 2rem;
+    }
+}

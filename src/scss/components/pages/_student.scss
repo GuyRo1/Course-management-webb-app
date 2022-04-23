@@ -1,0 +1,28 @@
+@use "../../base/base" as vars;
+
+.delete-student-svg-container {
+    margin-top:50px;
+    height: 80px;
+    width: 80px;
+    svg {
+        height:100%;
+        width:100%;
+        color: vars.$myBlue;
+        cursor:pointer;
+    }
+}
+
+
+.student-data{
+    margin-top:100px;
+}
+
+.label{
+    background:vars.$myBlue;
+    color:white;
+}
+
+.value{
+    background:white;
+    color:vars.$myBlue;
+}

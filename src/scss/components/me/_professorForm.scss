@@ -1,0 +1,62 @@
+@use "../../base/base" as vars;
+
+.professor-user-data-form {
+    width: 60%;
+    border: 3px solid vars.$myBlue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top:50px;
+
+    .mobile > & {
+        margin-top:0;
+        height: 80%;
+        width: 80%;
+        border: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding: 0 0.5rem;
+        border: 1px solid vars.$myBlue;
+        margin-top: 1rem;
+
+        &:disabled {
+            background-color: vars.$myLightBlue;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .input-invalid {
+        border: 1px solid vars.$myRed;
+    }
+
+    button {
+        margin-top: 0.5rem;
+        display: block;
+        padding: 0.5rem;
+        background-color: vars.$myBlue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: #cccc;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.invalid-message {
+    color: vars.$myRed;
+    font-size: 0.75rem;
+}

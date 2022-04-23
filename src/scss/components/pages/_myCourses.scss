@@ -1,0 +1,17 @@
+@use "../../base/base" as vars;
+
+.courses-container {
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-container {
+    font-weight: bold;
+    color:vars.$myBlue;
+    font-size: x-large;
+    display: flex;
+    cursor:pointer;
+}

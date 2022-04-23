@@ -1,0 +1,45 @@
+@use "../../base/base" as vars;
+
+.mobile-button {
+    // margin: 7px 0px auto 10px;
+    // margin-top:0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    .line {
+        height: 5px;
+        width: 40px;
+        background: vars.$myWhite;
+        margin: 7px 0px;
+        margin-top:0;
+        border-radius: 30px;
+        transition: all linear 0.2s;
+    }
+
+    #top-line.open {
+        transform: translate(0, 12px) rotate(45deg);
+    }
+
+    #top-line.closed {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    #bottom-line.open {
+        transform: translate(0, -12px);
+        transform: rotate(-45deg);
+    }
+
+    #bottom-line.closed {
+        transform: rotate(0deg);
+        transform: translate(0, 0);
+    }
+
+    #middle-line.open {
+        display: none;
+    }
+
+    #middle-line.closed {
+        display: block;
+    }
+}

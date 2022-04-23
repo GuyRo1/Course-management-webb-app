@@ -1,0 +1,23 @@
+@use "../../base/base" as vars;
+
+ul {
+    display:flex;
+    flex-direction:column;
+    margin-top:50px;
+    list-style-type: none;
+
+    .odd {
+        display:block;
+        color: vars.$myBlue;
+        background-color: white;
+
+      
+    }
+
+    .even {
+        display:block;
+        color: white;
+        background-color: vars.$myBlue;
+
+    }
+}

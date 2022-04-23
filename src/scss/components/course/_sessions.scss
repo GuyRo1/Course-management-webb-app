@@ -1,0 +1,29 @@
+@use "../../base/base" as vars;
+
+.sessions-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    li {
+        list-style-type: none;
+
+        &.odd {
+            color: vars.$myBlue;
+            background-color: white;
+
+            &:hover {
+                cursor:pointer;
+            }
+        }
+
+        &.even {
+            color: vars.$myWhite;
+            background-color: vars.$myBlue;
+
+            &:hover {
+               cursor:pointer;
+            }
+        }
+    }
+}

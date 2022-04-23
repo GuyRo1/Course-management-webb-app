@@ -1,0 +1,9 @@
+@use "../../base/base" as vars;
+
+footer{
+    margin-top:3rem;
+    width: 100%;
+    //height: 3rem;
+    height:0;
+    background-color: vars.$myRed
+}
